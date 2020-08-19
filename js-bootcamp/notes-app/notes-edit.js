@@ -2,7 +2,7 @@ const titleEl = document.querySelector("#noteTitle")
 const bodyEl = document.querySelector("#noteBody")
 const removeEl = document.querySelector("#removeNote")
 const spanEl = document.querySelector("#lastEdited")
-const noteId = location.hash.substring(1)
+const noteId = location.hash.substring(1) 
 
 let notes = getSavedNotes()
 let note = notes.find((note) => note.id === noteId)
