@@ -1,11 +1,17 @@
+'use strict'
+
 // Get Existing Data from LocalStorage
 const getSavedTodos = () => {
     const todoJSON = localStorage.getItem('todos')
-    if(todoJSON){
-        return JSON.parse(todoJSON)
-    }
-    else 
+    try{
+        if(todoJSON){
+            return JSON.parse(todoJSON)
+        }
+        else 
+            return []
+    }catch(e){
         return []
+    }
 }
 
 // Save Todos to LocalStorage
