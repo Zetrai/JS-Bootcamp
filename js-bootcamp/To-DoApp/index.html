@@ -2,22 +2,36 @@
 
 <html>
     <head>
-        
+        <title>TODO App</title>
+        <link href="/styles/styles.css" rel="stylesheet">
+        <link href="/images/favicon.png" rel="icon">
     </head>
     <body>
-        <h1>TO DO</h1>
-        <input id="searchText" type='text' placeholder="Search Todos">
-        <label>
-            <input id="hide" type="checkbox">Hide Completed
-        </label>
-        <div id= "todos"> </div>
-        <form id="todoForm">
-            <input type="text" placeholder="Something to do" name="addTodo">
-            <button>Submit</button>
-        </form>
-        <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
-        <script src= "todoFunctions.js"></script>
-        <script src= "To-doApp.js"></script>
+        <div class="header">
+            <div class="container">
+                <h1 class="header__title">TO DO</h1>
+            </div>
+        </div>
+        <div class="actions">
+            <div class="actions__container">
+                <input id="searchText" class="input" type='text' placeholder="Search Todos">
+                <label class="checkbox">
+                    <input id="hide" type="checkbox">Hide Completed
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <div id= "todos"> </div>
+            <form id="todoForm">
+                <input type="text" class="input" placeholder="Something to do" name="addTodo">
+                <button class="button">Submit</button>
+            </form>
+        </div>
+        
+        <script src="/scripts/uuidv4.js"></script>
+        <script src= "/scripts/todoFunctions.js"></script>
+        <script src= "/scripts/To-doApp.js"></script>
 
 
     </body>
